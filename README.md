@@ -169,8 +169,8 @@ ML-Demand-Prediction-Prophet-XGBoost/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ml-demand-prediction.git
-cd ml-demand-prediction
+git clone https://github.com/Sam-Chhabra/ML-Demand-Prediction-Prophet-XGBoost.git
+cd ML-Demand-Prediction-Prophet-XGBoost
 ```
 
 2. Create a virtual environment (recommended)
@@ -186,7 +186,7 @@ source .venv/bin/activate
 pip install pandas numpy scikit-learn xgboost prophet matplotlib seaborn
 ```
 
-4. Run the notebooks in order:
+4. Run the notebook of choice:
 
 - `Prophet_MML_cod.ipynb`
 - `xgboostV3_cod.ipynb`
@@ -194,7 +194,9 @@ pip install pandas numpy scikit-learn xgboost prophet matplotlib seaborn
 The final predictions will be generated in:
 
 ```
-outputs/submission.csv
+outputs/final_submission_prophet.csv
+outputs/submission_XGBoost.csv
+
 ```
 
 ---
