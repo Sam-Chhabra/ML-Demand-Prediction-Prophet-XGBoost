@@ -140,3 +140,115 @@ The pipeline is reproducible and robust to overestimation risk.
 ---
 
 ## 📂 Repository Structure
+
+```
+ml-demand-prediction/
+│
+├── notebooks/
+│   ├── 01_eda_visualization.ipynb
+│   ├── 02_model_training.ipynb
+│
+├── data/
+│   ├── receivals.csv
+│   ├── purchase_orders.csv
+│   ├── materials.csv
+│   ├── transportation.csv
+│
+├── outputs/
+│   └── submission.csv
+├── material_receival_visualization.ipynb
+├── Report.pdf
+└── README.md
+```
+
+---
+
+## 🚀 How to Reproduce
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/ml-demand-prediction.git
+cd ml-demand-prediction
+```
+
+2. Create a virtual environment (recommended)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+3. Install required libraries
+
+```bash
+pip install pandas numpy scikit-learn xgboost prophet matplotlib seaborn
+```
+
+4. Run the notebooks in order:
+
+- `01_eda_visualization.ipynb`
+- `02_model_training.ipynb`
+- `03_generate_submission.ipynb`
+
+The final predictions will be generated in:
+
+```
+outputs/submission.csv
+```
+
+---
+
+## 📌 Key Takeaways
+
+- Industrial delivery forecasting is strongly driven by **calendar effects**.
+- **Zero-inflated demand distributions** require robust modeling strategies.
+- Asymmetric loss functions significantly influence model design.
+- Conservative calibration improves performance under quantile objectives.
+- Prophet provides strong interpretability for time series decomposition.
+- XGBoost captures nonlinear cross-material dependencies.
+
+---
+
+## 🧠 Technical Highlights
+
+- Expanding-window time series validation  
+- Quantile loss optimization (α = 0.2)  
+- Lag and rolling feature engineering  
+- Backlog-based predictive signals  
+- Monotonic cumulative reconstruction  
+- Conservative shrinkage calibration  
+- Cross-material global modeling with XGBoost  
+- Per-material additive time series modeling with Prophet  
+
+---
+
+## 👥 Authors
+
+**Group 153 – Italienerne**
+
+- Riccardo Mazzoleni  
+- Simone Tolledi  
+- Samrath Singh Chhabra  
+
+TDT4173 – Modern Machine Learning in Practice  
+NTNU – 2025
+
+---
+
+## 🔮 Future Improvements
+
+- Hybrid Prophet + XGBoost stacking  
+- Direct quantile regression boosting  
+- Integration of external regressors (weather, logistics disruptions)  
+- Learned monotonic constraints  
+- Bayesian uncertainty estimation  
+- Automated shrinkage calibration via cross-validation  
+
+---
+
+## 📄 License
+
+This project is provided for **academic and portfolio purposes**.
+
+Dataset sourced from a **public Kaggle competition (Append Consulting × Hydro)**.
