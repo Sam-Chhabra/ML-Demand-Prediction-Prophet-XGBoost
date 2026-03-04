@@ -59,7 +59,7 @@ Key findings:
 - Heavy-tailed distribution of deliveries
 - Few materials account for most of total production
 
-Calendar effects were especially dominant, motivating explicit seasonal modeling  [oai_citation:5‡Report.pdf](sediment://file_000000006150720a93853791c3977cce).
+Calendar effects were especially dominant, motivating explicit seasonal modeling (see [Report.pdf](./Report.pdf)).
 
 ---
 
