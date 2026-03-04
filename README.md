@@ -144,7 +144,8 @@ The pipeline is reproducible and robust to overestimation risk.
 ## 📂 Repository Structure
 
 ```
-ml-demand-prediction/
+
+ML-Demand-Prediction-Prophet-XGBoost/
 │
 ├── notebooks/
 │   ├── Prophet_MML_cod.ipynb
