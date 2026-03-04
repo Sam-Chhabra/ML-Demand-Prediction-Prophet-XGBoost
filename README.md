@@ -1,7 +1,5 @@
 # ML Demand Prediction – Industrial Raw Material Forecasting
 
-Machine learning–based cumulative time series prediction of industrial raw material receivals using Prophet and XGBoost, optimized for asymmetric quantile loss (α = 0.2).
-
 ---
 
 ## 📌 Project Overview
