@@ -196,9 +196,7 @@ The final predictions will be generated in:
 ```
 outputs/final_submission_prophet.csv
 outputs/submission_XGBoost.csv
-
 ```
-
 ---
 
 ## 📌 Key Takeaways
