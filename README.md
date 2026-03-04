@@ -8,7 +8,7 @@ Machine learning–based cumulative time series prediction of industrial raw mat
 
 This project was developed as part of **TDT4173 – Modern Machine Learning in Practice**, in collaboration with **Append Consulting × Hydro ASA**.
 
-The objective is to forecast the **cumulative weight of incoming raw material deliveries (`rm_id`)** from **January 1, 2025 to May 31, 2025**, for any specified end date within this range  [oai_citation:2‡Machine_learning_task_for_TDT4173.pdf](sediment://file_00000000e010724687abf9fe47e0cb75).
+The objective is to forecast the **cumulative weight of incoming raw material deliveries (`rm_id`)** from **January 1, 2025 to May 31, 2025**, for any specified end date within this range.
 
 Unlike traditional forecasting tasks, this problem emphasizes **conservative predictions**, as overestimating available materials may disrupt smelting operations. Therefore, evaluation is performed using **Quantile Loss at α = 0.2**, which penalizes overestimation four times more than underestimation  [oai_citation:3‡Machine_learning_task_for_TDT4173.pdf](sediment://file_00000000e010724687abf9fe47e0cb75).
 
