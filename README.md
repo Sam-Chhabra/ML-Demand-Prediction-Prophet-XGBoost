@@ -145,7 +145,7 @@ The pipeline is reproducible and robust to overestimation risk.
 ml-demand-prediction/
 │
 ├── notebooks/
-│   ├── 01_eda_visualization.ipynb
+│   ├── Prophet_MML_cod.ipynb
 │   ├── 02_model_training.ipynb
 │
 ├── data/
@@ -187,7 +187,7 @@ pip install pandas numpy scikit-learn xgboost prophet matplotlib seaborn
 
 4. Run the notebooks in order:
 
-- `01_eda_visualization.ipynb`
+- `Prophet_MML_cod.ipynb`
 - `02_model_training.ipynb`
 - `03_generate_submission.ipynb`
 
@@ -227,11 +227,10 @@ outputs/submission.csv
 
 **Group 153 – Italienerne**
 
+- Sam Chhabra
 - Riccardo Mazzoleni  
 - Simone Tolledi  
-- Samrath Singh Chhabra  
-
-TDT4173 – Modern Machine Learning in Practice  
+ 
 NTNU – 2025
 
 ---
@@ -248,7 +247,5 @@ NTNU – 2025
 ---
 
 ## 📄 License
-
-This project is provided for **academic and portfolio purposes**.
 
 Dataset sourced from a **public Kaggle competition (Append Consulting × Hydro)**.
