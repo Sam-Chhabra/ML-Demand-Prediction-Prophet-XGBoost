@@ -158,7 +158,7 @@ ml-demand-prediction/
 │
 ├── outputs/
 │   ├── final_submission_prophet.csv
-    ├── 
+    ├── submission_XGBoost.csv
 ├── Report.pdf
 └── README.md
 ```
