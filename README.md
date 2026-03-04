@@ -157,8 +157,8 @@ ml-demand-prediction/
 │   ├── transportation.csv
 │
 ├── outputs/
-│   └── submission.csv
-├── material_receival_visualization.ipynb
+│   ├── final_submission_prophet.csv
+    ├── 
 ├── Report.pdf
 └── README.md
 ```
