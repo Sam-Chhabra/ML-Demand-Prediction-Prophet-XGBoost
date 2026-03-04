@@ -76,7 +76,7 @@ Each `rm_id` is modeled independently using **Prophet**, which decomposes time s
 - Holiday effects
 - Additive regressors
 
-Prophet naturally captures structured temporal patterns and proved especially effective at modeling calendar-driven shutdowns  [oai_citation:6‡Report.pdf](sediment://file_000000006150720a93853791c3977cce).
+Prophet naturally captures structured temporal patterns and proved especially effective at modeling calendar-driven shutdowns [Report.pdf](./Report.pdf).
 
 It was used primarily for the 30 most active materials.
 
@@ -95,7 +95,7 @@ Features include:
 - Calendar encodings
 - `rm_id` as categorical feature
 
-XGBoost captures nonlinear cross-material interactions but required stronger postprocessing to enforce monotonic cumulative outputs  [oai_citation:7‡Report.pdf](sediment://file_000000006150720a93853791c3977cce).
+XGBoost captures nonlinear cross-material interactions but required stronger postprocessing to enforce monotonic cumulative outputs [Report.pdf](./Report.pdf).
 
 ---
 
@@ -122,7 +122,7 @@ Raw model outputs were adjusted to satisfy operational constraints:
 3. **Enforcing monotonicity**
 4. **Applying conservative shrinking factor**
 
-Because Prophet minimizes MSE rather than asymmetric quantile loss, we applied a **multiplicative shrinking calibration** to bias forecasts toward underestimation  [oai_citation:8‡Report.pdf](sediment://file_000000006150720a93853791c3977cce).
+Because Prophet minimizes MSE rather than asymmetric quantile loss, we applied a **multiplicative shrinking calibration** to bias forecasts toward underestimation [Report.pdf](./Report.pdf).
 
 This step significantly improved stability under α = 0.2.
 
