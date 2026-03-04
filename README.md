@@ -146,7 +146,7 @@ ml-demand-prediction/
 │
 ├── notebooks/
 │   ├── Prophet_MML_cod.ipynb
-│   ├── 02_model_training.ipynb
+│   ├── xgboostV3_cod.ipynb
 │
 ├── data/
 │   ├── receivals.csv
@@ -188,8 +188,7 @@ pip install pandas numpy scikit-learn xgboost prophet matplotlib seaborn
 4. Run the notebooks in order:
 
 - `Prophet_MML_cod.ipynb`
-- `02_model_training.ipynb`
-- `03_generate_submission.ipynb`
+- `xgboostV3_cod.ipynb`
 
 The final predictions will be generated in:
 
