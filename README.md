@@ -10,7 +10,7 @@ This project was developed as part of **TDT4173 – Modern Machine Learning in P
 
 The objective is to forecast the **cumulative weight of incoming raw material deliveries (`rm_id`)** from **January 1, 2025 to May 31, 2025**, for any specified end date within this range.
 
-Unlike traditional forecasting tasks, this problem emphasizes **conservative predictions**, as overestimating available materials may disrupt smelting operations. Therefore, evaluation is performed using **Quantile Loss at α = 0.2**, which penalizes overestimation four times more than underestimation  [oai_citation:3‡Machine_learning_task_for_TDT4173.pdf](sediment://file_00000000e010724687abf9fe47e0cb75).
+Unlike traditional forecasting tasks, this problem emphasizes **conservative predictions**, as overestimating available materials may disrupt smelting operations. Therefore, evaluation is performed using **Quantile Loss at α = 0.2**, which penalizes overestimation four times more than underestimation.
 
 The final system produces **non-decreasing cumulative forecasts** for each material, aligned with operational constraints.
 
@@ -31,12 +31,14 @@ The task requires forecasting cumulative delivered weight per `rm_id` in kilogra
 
 ## 🎯 Evaluation Metric
 
-The evaluation metric is **Quantile Error at 0.2 (Pinball Loss)**  [oai_citation:4‡Machine_learning_task_for_TDT4173.pdf](sediment://file_00000000e010724687abf9fe47e0cb75):
 
-\[
-\text{QuantileLoss}_{0.2}(F_i, A_i) =
-\max(0.2(A_i - F_i), 0.8(F_i - A_i))
-\]
+The evaluation metric is **Quantile Loss at α = 0.2 (Pinball Loss)**.
+
+QuantileLoss₀.₂(Fᵢ, Aᵢ) = max(0.2 × (Aᵢ − Fᵢ), 0.8 × (Fᵢ − Aᵢ))
+
+Where:
+- **Aᵢ** = actual cumulative deliveries
+- **Fᵢ** = predicted cumulative deliveries
 
 This asymmetric loss reflects industrial risk preferences:
 
